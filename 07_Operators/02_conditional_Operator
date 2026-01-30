@@ -1,0 +1,4 @@
+#Conditional Operators
+print(a>41)
+print(a==34)
+print(a != 34)
