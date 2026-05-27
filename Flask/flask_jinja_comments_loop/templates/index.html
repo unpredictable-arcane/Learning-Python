@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks of Jinja School International</title>
+</head>
+<body>
+    <ul>
+        {# This is my comment #}
+        {% for key in marks.keys() %}
+        <li>
+            The marks of {{ key }} is {{ marks[key] }}
+            {% if marks[key] > 80 %}
+                <span>Good</span>
+            {% endif %}
+        </li>
+        {% endfor %}
+
+        
+        {#<li>The marks of pikachu is {{marks['pikachu']}}</li>
+        <li>The marks of Bulbasaur is {{marks['Bulbasaur']}}</li>
+        <li>The marks of Charmander is {{marks['Charmander']}}</li>
+        <li>The marks of Squirtle is {{marks['Squirtle']}}</li>
+        <li>The marks of Archaludon is {{marks['John']}}</li>
+        <li>The marks of Mew is {{marks['Mew']}}</li> #}
+    </ul>
+    
+    
+
+
+</body>
+</html>
