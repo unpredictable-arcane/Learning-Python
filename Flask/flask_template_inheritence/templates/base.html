@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock%}</title>
+    <style>
+        nav{
+            color: rgb(198, 122, 29);
+        }
+
+        footer{
+            background-color: #1ac0da;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    # this page is like a base stuff for pizza and for add on stuffings we make changes
+    # in the particular files as per the requirements
+    <nav>
+        This is a navbar
+    </nav>
+
+    {% block content %} {% endblock %}
+
+    <footer>
+        This is a footer
+    </footer>
+</body>
+</html>
